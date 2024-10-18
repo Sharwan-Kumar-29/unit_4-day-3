@@ -1,0 +1,109 @@
+body {
+  background-color: #e9eed9;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #54473f;
+}
+
+#text-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-analyzer {
+  background-color: #f6efbd;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+#function-btns {
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+/* CSS */
+.fn-btns {
+  appearance: button;
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.fn-btns:disabled {
+  opacity: 0.5;
+}
+
+.fn-btns:focus {
+  outline: 0;
+}
+
+.fn-btns:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+
+.fn-btns:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+
+#function-btns > div {
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+}
+
+#function-btns input {
+  padding: 10px 50px 10px 10px;
+}
+
+.output-div {
+  width: 80%;
+  margin: 30px auto;
+}
+
+#output-text-area {
+  width: 100%;
+  margin: auto;
+  height: 300px;
+  overflow: auto;
+  background-color: #cbd2a4;
+  border: 2px solid #54473f;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.highlight{
+  background-color: yellow;
+  font-weight: bold;
+}

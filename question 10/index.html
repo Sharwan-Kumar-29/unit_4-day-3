@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Text Analyzer</h1>
+    <div id="text-area">
+      <textarea
+        name="textarea"
+        id="text-analyzer"
+        rows="15"
+        cols="150"
+      ></textarea>
+    </div>
+
+    <div id="function-btns">
+      <button class="fn-btns" id="count-words">Count Words</button>
+      <button class="fn-btns" id="convert-to-lowercase">
+        Convert To LowerCase
+      </button>
+      <button class="fn-btns" id="convert-to-uppercase">
+        Convert To UpperCase
+      </button>
+
+      <button class="fn-btns" id="clear-text-area">Clear</button>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Enter Substring to Search"
+          id="substring-input"
+        />
+        <button class="fn-btns" id="search-substring">Search</button>
+      </div>
+    </div>
+
+    <!-- Display Results -->
+    <div class="output-div">
+      <h2>Output:</h2>
+      <div id="output-text-area">Your Output Will be Visible Here</div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

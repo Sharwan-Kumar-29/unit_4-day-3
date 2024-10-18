@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Cards</title>
+    <link rel="stylesheet" href="user_cards.css" />
+  </head>
+  <body>
+    <h1>User Cards</h1>
+    <div id="main">
+      <div id="form">
+        <form action="#">
+        <h1>Display Name</h1>
+
+          <label for="name">Name:</label><br />
+          <input id="name" type="text" placeholder="Enter your Name" required />
+          <br />
+
+          <label for="username">UserName:</label>
+          <br />
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your Username"
+            required
+          />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br />
+
+          <input type="submit" value="Display Card" />
+        </form>
+      </div>
+
+      <!-- Cards -->
+      <div id="cards"></div>
+    </div>
+  </body>
+</html>
+<script src="user_cards.js"></script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Tag DOM Manipulation</title>
+  </head>
+  <body>
+    <select style="padding: 10px 20px" onchange="changeImage()">
+      <option value="">Select Image</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="elephant">Elephant</option>
+      <option value="lion">Lion</option>
+    </select>
+    <br />
+    <br />
+    <img src="" alt="" width="50%" />
+  </body>
+</html>
+
+<script>
+  function changeImage() {
+    let select = document.querySelector("select").value;
+    let image = document.querySelector("img");
+    if (select == "dog") {
+      image.src = "dog-image.png";
+    } else if (select == "cat") {
+      image.src = "cat-image.png";
+    } else if (select == "lion") {
+      image.src = "lion-image.png";
+    } else if (select == "elephant") {
+      image.src = "elephant-image.png";
+    } else {
+      image.src = "";
+    }
+  }
+</script>

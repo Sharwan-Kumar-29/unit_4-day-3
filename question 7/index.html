@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Length</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Write any Text" />
+      <button>GO</button>
+      <br>
+      <br>
+      <span></span>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("button").addEventListener("click", () => {
+    let input = document.querySelector("input").value;
+    console.log(input.length);
+    let l = 0;
+    for (let i = 0; i < input.length; i++) {
+      if (input[i] == " ") {
+        continue;
+      }
+
+      l++;
+    }
+    document.querySelector("span").innerText = `Length of String: ${l}`;
+  });
+</script>

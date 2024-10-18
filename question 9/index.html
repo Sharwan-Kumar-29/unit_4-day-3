@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>E-Commerce Webpage</h1>
+      <div id="sort">
+        <!-- Category Sort (Code Via JS) -->
+        <div id="category">
+          <select
+            name="category"
+            id="category_select"
+            onchange="sortByCategory()"
+          >
+            <option value="">Sort By Category</option>
+          </select>
+        </div>
+
+        <!-- Price Sort -->
+        <div id="price">
+          <select name="price" id="price_select" onchange="sortByPrice()">
+            <option value="">Sort By Price</option>
+            <option value="low-to-high">Low-To-High</option>
+            <option value="high-to-low">High-To-Low</option>
+          </select>
+        </div>
+
+        <!-- Popularity Sort (Rating) -->
+        <div id="popularity">
+          <select
+            name="popularity"
+            id="popularity_select"
+            onchange="sortByPopularity()"
+          >
+            <option value="">Sort By Popularity</option>
+            <option value="low-to-high">Low-To-High</option>
+            <option value="high-to-low">High-To-Low</option>
+          </select>
+        </div>
+
+        <div id="search">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search Products"
+            oninput="search()"
+          />
+        </div>
+      </div>
+    </nav>
+    <div id="cards"></div>
+  </body>
+</html>
+<script src="product.js"></script>
